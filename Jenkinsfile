@@ -8,7 +8,7 @@ pipeline {
         stage("Build") {
             steps {
                 sh "bundle install"
-                sg "cucumber"
+                sh "cucumber"
             }
         }
     }
